@@ -1,0 +1,20 @@
+<h2>Login In</h2>
+<div>
+  <label>Login Id:
+    <input [(ngModel)]="user.userId" placeholder="Login Id">
+  </label>
+</div>
+
+<div>
+    <label>Password:
+      <input [(ngModel)]="user.password" placeholder="Password">
+    </label>
+  </div>
+
+<div>
+  <input type="button" value="Login" (click)="Login()"/>
+</div>
+<h4 style="color: brown">{{errormessage}}</h4>
+<!-- <div>
+  <input type="text" value="{{errormessage}}"/>
+</div> -->
